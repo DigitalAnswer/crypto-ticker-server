@@ -1,0 +1,6 @@
+.DS_Store
+vendor/
+*.out
+config.yml
+var/
+crypto-ticker-server
