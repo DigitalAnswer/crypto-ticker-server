@@ -9,5 +9,5 @@ WORKDIR /app
 # Add the source code:
 ADD . $SRC_DIR
 # Build it:
-RUN cd $SRC_DIR; go build -o crypto-ticker-server; cp crypto-ticker-server /app/
+RUN cd $SRC_DIR; go build -o $PROJECT_NAME; cp $PROJECT_NAME /app/
 ENTRYPOINT ["./crypto-ticker-server"]
